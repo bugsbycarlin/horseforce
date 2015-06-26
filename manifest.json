@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "HorseForce",
+  "version": "1.0",
+  "description": "Customizable word replacement chrome extension ala http://xkcd.com/1418",
+  "content_scripts": 
+  [
+    {
+      "matches": ["*://*/*"],
+      "js": ["replacement.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "options_ui":
+  {
+    "page": "options.html",
+    "chrome_style": true
+  }
+}
