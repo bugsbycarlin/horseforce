@@ -38,8 +38,6 @@
       replacement_item = replacement_list[i];
       target = replacement_item[0];
       replacement = replacement_item[1];
-      console.log("--" + target + "--");
-      console.log("------" + replacement + "--");
 
       r = new RegExp(target, "gi");
 
@@ -47,7 +45,6 @@
       {
         value = value.replace(r, function(match)
         {
-          console.log("Replaced one!");
           return matchCase(replacement, match);
         });
       }
