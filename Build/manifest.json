@@ -18,9 +18,5 @@
   {
     "page": "options.html",
     "chrome_style": true
-  },
-  "icons":
-  {
-    "128": "horse.png"
   }
 }
